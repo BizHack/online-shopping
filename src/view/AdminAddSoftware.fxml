@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminAddSoftwareController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../application/application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="softwareTable" layoutX="42.0" layoutY="71.0" prefHeight="200.0" prefWidth="516.0">
+              <columns>
+                <TableColumn fx:id="Col1" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="Col2" prefWidth="75.0" text="Size" />
+                  <TableColumn fx:id="Col3" prefWidth="75.0" text="Edition" />
+                  <TableColumn fx:id="Col4" prefWidth="75.0" text="Price" />
+                  <TableColumn fx:id="Col5" prefWidth="35.0" text="Type" />
+                  <TableColumn fx:id="Col6" prefWidth="98.0" text="Delivery Type" />
+                  <TableColumn fx:id="Col7" prefWidth="82.0" text="Product ID" />
+              </columns>
+            </TableView>
+            <Button layoutX="458.0" layoutY="14.0" mnemonicParsing="false" onAction="#signOut" text="Sign out" />
+            <Button layoutX="377.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnHome" text="Home" />
+            <Button layoutX="425.0" layoutY="339.0" mnemonicParsing="false" onAction="#addSoftwares" prefHeight="33.0" prefWidth="126.0" text="Add Software" />
+            <Label layoutX="38.0" layoutY="278.0" text="Name" textFill="#c22f2f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <TextField fx:id="name" layoutX="14.0" layoutY="297.0" prefHeight="25.0" prefWidth="90.0" />
+            <TextField fx:id="size" layoutX="115.0" layoutY="297.0" prefHeight="25.0" prefWidth="90.0" />
+            <Label layoutX="146.0" layoutY="278.0" text="Size" textFill="#c22f2f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <TextField fx:id="edition" layoutX="216.0" layoutY="297.0" prefHeight="25.0" prefWidth="90.0" />
+            <Label layoutX="236.0" layoutY="278.0" text="Edition" textFill="#c22f2f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <TextField fx:id="price" layoutX="318.0" layoutY="297.0" prefHeight="25.0" prefWidth="90.0" />
+            <Label layoutX="347.0" layoutY="278.0" text="Price" textFill="#c22f2f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <ComboBox fx:id="typeCombo" layoutX="22.0" layoutY="343.0" prefHeight="25.0" prefWidth="209.0" promptText="Delivery Type" style="-fx-background-color: #CC6633;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

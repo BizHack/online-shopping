@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerProfileController">
+	<children>
+		<Label layoutX="6.0" layoutY="21.0" prefHeight="110.0" prefWidth="211.0" text="Customer Profile" textAlignment="RIGHT" textFill="#c22f2f">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font></Label>
+		<TextField fx:id="address" layoutX="101.0" layoutY="129.0" prefHeight="25.0" prefWidth="329.0" />
+		<TextField fx:id="name" layoutX="101.0" layoutY="189.0" prefHeight="25.0" prefWidth="193.0" />
+		<Button layoutX="300.0" layoutY="188.0" mnemonicParsing="false" onAction="#modifyName" text="Change Name" />
+		<Button layoutX="434.0" layoutY="128.0" mnemonicParsing="false" onAction="#modifyAddr" prefHeight="27.0" prefWidth="144.0" text="Change Address" />
+      <Label layoutX="6.0" layoutY="131.0" prefHeight="17.0" prefWidth="120.0" text="New Address:" textFill="#c22f2f">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="6.0" layoutY="190.0" prefHeight="17.0" prefWidth="120.0" text="Full Name:" textFill="#c22f2f">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <TableView fx:id="customerTable" layoutX="13.0" layoutY="307.0" prefHeight="59.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="Col1" prefWidth="99.0" text="Your ID" />
+          <TableColumn fx:id="Col2" prefWidth="124.0" text="Your Name" />
+            <TableColumn fx:id="Col3" prefWidth="450.0" text="Your Address" />
+        </columns>
+      </TableView>
+      <Button layoutX="421.0" layoutY="21.0" mnemonicParsing="false" onAction="#returnHome" text="Menu" />
+      <Button layoutX="498.0" layoutY="21.0" mnemonicParsing="false" onAction="#signOut" text="Sign out" />
+   </children>
+</AnchorPane>

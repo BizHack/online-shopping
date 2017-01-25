@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminSoftwareController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../application/application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="softwareTable" layoutX="25.0" layoutY="74.0" prefHeight="200.0" prefWidth="523.0">
+              <columns>
+                <TableColumn fx:id="Col1" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="Col2" prefWidth="69.0" text="Size" />
+                  <TableColumn fx:id="Col3" prefWidth="76.0" text="Edition" />
+                  <TableColumn fx:id="Col4" prefWidth="68.0" text="Price" />
+                  <TableColumn fx:id="Col5" prefWidth="58.0" text="Type" />
+                  <TableColumn fx:id="Col6" prefWidth="103.0" text="Delivery Type" />
+                  <TableColumn fx:id="Col7" text="Product ID" />
+              </columns>
+            </TableView>
+            <Button layoutX="461.0" layoutY="21.0" mnemonicParsing="false" onAction="#signOut" text="Sign out" />
+            <Button layoutX="379.0" layoutY="21.0" mnemonicParsing="false" onAction="#returnHome" text="Home" />
+            <ComboBox fx:id="combo" layoutX="247.0" layoutY="308.0" prefWidth="150.0" promptText="Actions" style="-fx-background-color: #CC6633;" />
+            <Button layoutX="422.0" layoutY="302.0" mnemonicParsing="false" onAction="#goForSoftwares" prefHeight="62.0" prefWidth="79.0" text="GO" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
